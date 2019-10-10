@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    function checkstar() {
+        var inputstar=prompt("Enter is a Star");
+        var a=["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+        var b=["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+        var index=-1;
+        for(let i=0;i<a.length;i++){
+            if(inputstar==a[i]){
+                index=i;
+                break;
+            }
+        }
+        if(index==-1){
+            document.writeln("Không có sao tương ứng");
+        }else {
+            document.writeln(b[index]);
+        }
+    }
+checkstar();
+</script>
+</body>
+</html>
